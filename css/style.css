@@ -161,15 +161,22 @@ display: block;
     color: #555555;
 }
 .cart{
+    width: 30px;
+    height: 30px;
     align-items: center;
-    color: #ffffff;
     margin: 55px 25px  0 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid transparent;
 }
 .cart:hover .cart-img{
     fill: #998675;
 }
 .cart:active .cart-img{
     fill: #555555;
+}
+.cart:active{
+    outline: 1px solid transparent;
 }
 .cart-img{
     fill: currentColor;
@@ -342,21 +349,96 @@ min-height: 375px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
     width: 300px;
-    padding: 10px 10px 0 10px;
     box-sizing: border-box;
     text-align: center;
     color: #555555;
+    margin: 0;
+}
+.service-box:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #555555;
+    margin: 0 0 80px 0;
+}
+.service-box:hover .service-img {
+    fill: #c7b299;
+    cursor: pointer;
+}
+.service-box:hover .service-header {
+    color: #c7b299;
+    cursor: pointer;
+}
+.service-box:hover .service-text {
+    cursor: pointer;
+}
+.service-box:hover:after {
+    background-color: #c7b299;
+    cursor: pointer;
+}
+.service-box:active .service-img {
+    fill: #998675;
+}
+.service-box:active .service-header {
+    color: #998675;
+}
+.service-box:active:after {
+    background-color: #998675;
 }
 .service-img{
-
+    fill: currentColor;
+    margin: 80px 0 30px 0;
 }
 .service-header{
-
+    margin: 0 0 20px 0;
+    width: 100%;
+    font-weight: bold;
 }
 .service-text{
-
+    margin: 0 15px 30px 15px;
 }
-
 /*End of Services styles*/
+/*Section Portfolio styles*/
+.portfolio{
+    background-color: #fbfaf8;
+    min-height: 700px;
+    width: 100%;
+}
+.portfolio-title{
+    display: inline-block;
+    width: 100%;
+    font-family: 'ralewayregular', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+    padding: 0;
+    margin: 80px 0 25px 0;
+}
+.portfolio-text{
+    display: inline-block;
+    font-family: 'montserratregular', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+    width: 760px;
+    align-items: center;
+    margin: 0 580px 40px 580px;
+}
+.portfolio-background{
+    margin: 0 auto;
+width: 1230px;
+    min-height: 480px;
+    background-image: url("../img/portfolio-1.png"),
+                    url("../img/portfolio-2.png"),
+                    url("../img/portfolio-3.png");
+    background-size: 60%, 40%, 40%;
+    background-repeat: no-repeat;
+    background-position: bottom center, bottom left, bottom right;
+}
+/*End of Section Portfolio styles*/
